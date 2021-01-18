@@ -8,8 +8,7 @@
 - [referencia-de-funcoes](referencia-de-funcoes) - Referência de funções importantes a serem guardadas.
 - [superglobais](superglobais) - Constantes, escopo, variáveis Superglobais em PHP e métodos GET e POST.
 - [formularios](formularios) - Trabalhando com formulários em PHP.
-<!--
 - [headers](headers) - Manipulação de cabeçalhos em PHP
 - [crud](crud) - CRUD e o conceito de *Entidades*
 - [cookies](cookies) - Cookies e como **NÃO FAZER** uma autenticação
-- [sessao](sessao) - Sessão e mecanismos de autenticação -->
+- [sessao](sessao) - Sessão e mecanismos de autenticação
