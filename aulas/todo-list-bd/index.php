@@ -15,10 +15,21 @@
             ?>
             <?php foreach ($tasks as $task): ?>
                 <div class="w-full border my-2 p-2 hover:bg-gray-100">
-                    <?= $task['task'] ?>
-                    <a class="float-right text-red-400 hover:text-red-600" href="rm-tarefa.php?id=<?= $task['id'] ?>">
-                        Remover
-                    </a>
+                    <span
+                        <?php if ($task['finished'] == '1'): ?>
+                            class="line-through"
+                        <?php endif ?>
+                    ><?= $task['task'] ?></span>
+                    <div class="float-right">
+                        <?php if ($task['finished'] == '0'): ?>
+                            <a class="text-indigo-400 hover:text-indigo-600" href="update-tarefa.php?id=<?= $task['id'] ?>">
+                                Finalizar
+                            </a>
+                        <?php endif ?>
+                        <a class="text-red-400 hover:text-red-600" href="rm-tarefa.php?id=<?= $task['id'] ?>">
+                            Remover
+                        </a>
+                    </div>
                 </div>
             <?php endforeach ?>
         </div>

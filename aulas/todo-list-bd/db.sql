@@ -5,8 +5,9 @@ CREATE TABLE users (
 );
 
 CREATE TABLE tasks (
-    id      INT PRIMARY KEY AUTO_INCREMENT,
-    task    VARCHAR(255),
-    user_id INT,
+    id       INT PRIMARY KEY AUTO_INCREMENT,
+    task     VARCHAR(255),
+    finished BOOLEAN DEFAULT false,
+    user_id  INT,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
